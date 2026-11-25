@@ -1,0 +1,19 @@
+[project]
+name = "uptime-monitor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "{ale_artu}", email = "{aleartu2000@gmail.com}" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.165.0",
+]
+
+[project.scripts]
+uptime-monitor = "uptime_monitor:main"
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
